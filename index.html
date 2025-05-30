@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jumma Mubarak Samiya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .word {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: showWord 1.2s forwards;
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .word1 {
+      animation-delay: 0.5s;
+      font-size: 3em;
+      font-family: 'Cinzel Decorative', cursive;
+      color: #00ffff;
+      text-shadow: 0 0 20px #00ffff;
+    }
+
+    .word2 {
+      animation-delay: 1.8s;
+      font-size: 2.8em;
+      font-family: 'Cinzel Decorative', cursive;
+      color: #00ffcc;
+      text-shadow: 0 0 20px #00ffcc;
+    }
+
+    .word3 {
+      animation-delay: 3s;
+      font-size: 3em;
+      font-family: 'Great Vibes', cursive;
+      color: #ff69b4;
+      text-shadow: 0 0 15px #ff69b4;
+    }
+
+    .word4 {
+      animation-delay: 4.2s;
+      font-size: 2.5em;
+      font-family: 'Great Vibes', cursive;
+      color: #ff1493;
+      text-shadow: 0 0 15px #ff1493;
+    }
+
+    @keyframes showWord {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .word1, .word2, .word3, .word4 {
+        font-size: 2em !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="word word1">Jumma</div>
+  <div class="word word2">Mubarak</div>
+  <div class="word word3">Samiya</div>
+  <div class="word word4">Kala Jaan</div>
+
+</body>
+</html>
